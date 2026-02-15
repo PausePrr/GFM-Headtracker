@@ -2502,124 +2502,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "PCM_JLCPCB_Connectors:S2B-PH-K-S-GW"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 0 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "S2B-PH-K-S-GW"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "JLCPCB_Connectors:CONN-TH_S2B-PH-K-S-GW"
-				(at 0 -8.89 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://lcsc.com/product-detail/PH-Connectors_JST_S2B-PH-K-S-GW_PHsocket-1-2P-Curved-needle-pitch2mm_C157932.html"
-				(at 0 -11.43 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC Part" "C157932"
-				(at 0 -13.97 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "S2B-PH-K-S-GW_0_1"
-				(rectangle
-					(start -2.54 3.81)
-					(end 5.08 -3.81)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(circle
-					(center -2.03 3.3)
-					(radius 0.38)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin unspecified line
-					(at -5.08 1.27 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -5.08 -1.27 0)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Project_Symbols:BNO085_Halley"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2899,6 +2781,131 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+5V"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+5V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -3002,10 +3009,10 @@
 		)
 	)
 	(junction
-		(at 74.93 135.89)
+		(at 78.74 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "35a66702-4374-4f89-bc4a-73591f0df43e")
+		(uuid "661ee3ec-0d73-4250-a69d-b1390261edbf")
 	)
 	(junction
 		(at 92.71 125.73)
@@ -3080,17 +3087,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 135.89) (xy 81.28 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "251947fc-17ad-4b47-9641-7dbb6c091daf")
-	)
-	(wire
-		(pts
-			(xy 72.39 138.43) (xy 74.93 138.43)
+			(xy 72.39 138.43) (xy 78.74 138.43)
 		)
 		(stroke
 			(width 0)
@@ -3141,7 +3138,17 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 138.43) (xy 74.93 135.89)
+			(xy 78.74 135.89) (xy 81.28 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "638f270a-6e32-45ec-b10d-f887ae174d8b")
+	)
+	(wire
+		(pts
+			(xy 78.74 138.43) (xy 78.74 135.89)
 		)
 		(stroke
 			(width 0)
@@ -3201,7 +3208,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 135.89) (xy 74.93 133.35)
+			(xy 78.74 135.89) (xy 78.74 133.35)
 		)
 		(stroke
 			(width 0)
@@ -3282,7 +3289,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 133.35) (xy 74.93 133.35)
+			(xy 72.39 133.35) (xy 78.74 133.35)
 		)
 		(stroke
 			(width 0)
@@ -3309,16 +3316,6 @@
 			(type default)
 		)
 		(uuid "e66750ba-b6e9-44dd-8f48-4149f7000c64")
-	)
-	(wire
-		(pts
-			(xy 85.09 135.89) (xy 85.09 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e6bcdc2b-975e-4894-87da-1834bde6f3a1")
 	)
 	(wire
 		(pts
@@ -3602,72 +3599,6 @@
 			(project "Physics_Lab_2"
 				(path "/2bf0a60c-6e8f-4203-b806-d9c74a7dd08d"
 					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 82.55 157.48 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "14356aab-8ed3-49f6-8703-babdac07bd9b")
-		(property "Reference" "#PWR09"
-			(at 82.55 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 82.55 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 82.55 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 82.55 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 82.55 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "230f2788-32d4-4c01-a6eb-73282064c677")
-		)
-		(instances
-			(project "Physics_Lab_2"
-				(path "/2bf0a60c-6e8f-4203-b806-d9c74a7dd08d"
-					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -4727,6 +4658,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 85.09 135.89 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a921325f-df53-4e45-89d7-e76eb3ad99b7")
+		(property "Reference" "#PWR09"
+			(at 81.28 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 88.138 135.89 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 85.09 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ffb9ac52-836b-4c59-983b-33ab69551e50")
+		)
+		(instances
+			(project ""
+				(path "/2bf0a60c-6e8f-4203-b806-d9c74a7dd08d"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 29.21 146.05 270)
 		(unit 1)
@@ -5054,85 +5051,6 @@
 			(project "Physics_Lab_2"
 				(path "/2bf0a60c-6e8f-4203-b806-d9c74a7dd08d"
 					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PCM_JLCPCB_Connectors:S2B-PH-K-S-GW")
-		(at 83.82 162.56 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d2e2ff6e-9911-405a-af36-0fac6736abca")
-		(property "Reference" "U2"
-			(at 88.9 162.5599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "S2B-PH-K-S-GW"
-			(at 88.9 165.0999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "PCM_JLCPCB_Connectors:CONN-TH_S2B-PH-K-S-GW"
-			(at 74.93 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://lcsc.com/product-detail/PH-Connectors_JST_S2B-PH-K-S-GW_PHsocket-1-2P-Curved-needle-pitch2mm_C157932.html"
-			(at 72.39 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 83.82 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C157932"
-			(at 69.85 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "cfcf576e-2aa1-49f3-962f-781ada9b5665")
-		)
-		(pin "1"
-			(uuid "8b554612-9e91-4682-80cd-a4010d1aa306")
-		)
-		(instances
-			(project ""
-				(path "/2bf0a60c-6e8f-4203-b806-d9c74a7dd08d"
-					(reference "U2")
 					(unit 1)
 				)
 			)
